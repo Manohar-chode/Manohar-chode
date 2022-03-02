@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import './Box.css';
+
 class Box extends Component {
-  changeColorHandler = () => {
-    this.props.changeColor(this.props.id);
+  removeBoxHandler = () => {
+    this.props.removeBox(this.props.id);
   };
   render() {
     return (
       <div
-        // id={this.props.id}
-        style={{ backgroundColor: this.props.color }}
-        className='Box'
-        onClick={this.changeColorHandler}></div>
+        onClick={this.removeBoxHandler}
+        style={{
+          height: `${this.props.height}em`,
+          width: `${this.props.width}em`,
+          background: this.props.color,
+        }}></div>
     );
   }
 }

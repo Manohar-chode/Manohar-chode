@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-// import CoinFlipper from './components/CoinFlipper';
-import Colors from './components/Colors';
+// import Form from './components/Form';
+import BoxList from './components/BoxList';
 class App extends Component {
   render() {
-    return <Colors></Colors>;
+    return (
+      <div>
+        <BoxList></BoxList>
+      </div>
+    );
   }
 }
 
 export default App;
-// return <CoinFlipper></CoinFlipper>;
