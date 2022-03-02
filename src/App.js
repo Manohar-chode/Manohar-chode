@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-// import Random from './Random';
-// import Click from './Button';
-import RollDice from './RollDice';
+// import CoinFlipper from './components/CoinFlipper';
+import Colors from './components/Colors';
 class App extends Component {
   render() {
-    // return <Random maxNum={7} />;
-    return <RollDice></RollDice>;
+    return <Colors></Colors>;
   }
 }
 
 export default App;
-
-/* <Random maxNum={7}></Random> */
+// return <CoinFlipper></CoinFlipper>;
